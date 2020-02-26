@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#9</title>
+</head>
+
+<body>
+
+
+
+  <script>
+    // Exercise 9
+    // Write a program that prints the name with more characters in an array of names.
+
+    let names = ["Josie", "Cathrin", "Bob", "Max", "Hannah", "Alex"];
+
+    let longestName = names[0]
+
+    for (let i = 1; i < names.length; i++) {
+      if (longestName.length < names[i].length) {
+        longestName = names[i];
+      }
+    }
+
+    document.write(longestName + " is the longest name in the array.")
+
+  </script>
+
+</body>
+
+</html>

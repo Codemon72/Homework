@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#10</title>
+</head>
+
+<body>
+
+
+  <script>
+
+    // Exercise 10
+    // Write a program that asks the user for a name and outputs that name backwards.
+
+    let name = prompt("Please enter a name.")
+
+    let ananym = "";
+
+    for (let i = 0; i < name.length; i++) {
+      ananym += name[name.length - i - 1];
+    };
+
+    document.write("The ananym of " + name + " is " + ananym);
+
+
+  </script>
+</body>
+
+</html>

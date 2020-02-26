@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#6</title>
+</head>
+
+<body>
+
+  <script>
+
+
+
+    // ## Exercise 6
+    // Modify Exercise 4 so that the program asks the user for a number `n` and gives them the possibility to choose between computing the sum or computing the product of 1 to n.
+
+    let number = parseInt(prompt("Give me a number."));
+    let operator = prompt("Type 'product' if you would like the product of the numbers or 'sum' if you want the sum.");
+
+    let result = 0;
+    let output = "";
+
+    if (operator == "product") {
+      result = 1;
+      for (let i = 1; i <= number; i++) {
+        result *= i;
+        output += i;
+        if (i < number) {
+          output += " x ";
+        } else {
+          output += " = ";
+        }
+      }
+    } else if (operator == "sum") {
+      for (let i = 1; i <= number; i++) {
+        result += i;
+        output += i;
+        if (i < number) {
+          output += " + ";
+        } else {
+          output += " = "
+        }
+      }
+    }
+
+    document.write(output + result);
+
+
+  </script>
+
+</body>
+
+</html>

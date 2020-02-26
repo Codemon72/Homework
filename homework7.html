@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#7</title>
+</head>
+
+<body>
+
+
+  <script>
+    // Exercise 7
+    // Write a program that check whether a number exists inside an array of numbers.
+
+    let n = parseInt(prompt("check for a number between 1 and 20."))
+    let numbers = [4, 7, 10, 12, 1, 8, 20];
+
+    let exists = false;
+
+    for (let i = 0; i < numbers.length; i++) {
+      if (n == numbers[i]) {
+        exists = true;
+        document.write("That number exists in the array.")
+        break
+      }
+    }
+    if (!exists) {
+      document.write("That number does not exist in the array.")
+    }
+
+
+
+
+
+  </script>
+</body>
+
+</html>
